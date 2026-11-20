@@ -1,5 +1,3 @@
-<a name="top"></a>
-
 # Soulinspire Retail Application on AWS
 
 Building the AWS infrastructure foundation that allows a simple retail web application to be hosted, delivered, monitored, protected, and cost-controlled.
@@ -32,17 +30,20 @@ The backend test server runs on one Amazon EC2 instance using Amazon Linux 2023 
 9. [VPC and Networking Design](#vpc-and-networking-design)
    - [VPC Components](#vpc-components)
    - [VPC Setup Steps](#vpc-setup-steps)
-   - [VPC Screenshots](#vpc-screenshots)
+   - [Screenshots: VPC and Networking](#screenshots-vpc-and-networking)
 10. [IAM Configuration](#iam-configuration)
     - [IAM Purpose](#iam-purpose)
     - [IAM Best Practices Used](#iam-best-practices-used)
+    - [Screenshot Space: IAM](#screenshot-space-iam)
 11. [EC2 Backend Server](#ec2-backend-server)
     - [EC2 Configuration](#ec2-configuration)
     - [EC2 Deployment Steps](#ec2-deployment-steps)
+    - [Screenshot Space: EC2 Instance](#screenshot-space-ec2-instance)
 12. [Amazon Linux 2023 Terminal Login Session](#amazon-linux-2023-terminal-login-session)
     - [SSH Login Command](#ssh-login-command)
     - [Expected Login Session](#expected-login-session)
     - [Confirm the Operating System](#confirm-the-operating-system)
+    - [Screenshot Space: Amazon Linux Login](#screenshot-space-amazon-linux-login)
 13. [Apache HTTP Server Configuration](#apache-http-server-configuration)
     - [Install Apache](#install-apache)
     - [Start and Enable Apache](#start-and-enable-apache)
@@ -50,6 +51,7 @@ The backend test server runs on one Amazon EC2 instance using Amazon Linux 2023 
     - [Create an Apache Test Page](#create-an-apache-test-page)
     - [Test Apache Locally](#test-apache-locally)
     - [Test Apache from a Browser](#test-apache-from-a-browser)
+    - [Screenshot Space: Apache Running](#screenshot-space-apache-running)
 14. [Node.js Backend Service on Port 4000](#nodejs-backend-service-on-port-4000)
     - [Install Node.js](#install-nodejs)
     - [Confirm Node.js Installation](#confirm-nodejs-installation)
@@ -58,24 +60,30 @@ The backend test server runs on one Amazon EC2 instance using Amazon Linux 2023 
     - [Start Node.js Backend](#start-nodejs-backend)
     - [Test Node.js Locally](#test-nodejs-locally)
     - [Run Node.js in the Background](#run-nodejs-in-the-background)
+    - [Screenshot Space: Node.js Running](#screenshot-space-nodejs-running)
 15. [Amazon S3 Private Frontend Hosting](#amazon-s3-private-frontend-hosting)
     - [S3 Hosting Configuration](#s3-hosting-configuration)
     - [Files Uploaded to S3](#files-uploaded-to-s3)
     - [S3 Setup Steps](#s3-setup-steps)
+    - [Screenshots: S3](#screenshots-s3)
 16. [CloudFront Distribution with OAC](#cloudfront-distribution-with-oac)
     - [CloudFront Configuration](#cloudfront-configuration)
     - [CloudFront Setup Steps](#cloudfront-setup-steps)
     - [Example CloudFront URL Format](#example-cloudfront-url-format)
+    - [Screenshots: CloudFront](#screenshots-cloudfront)
 17. [Security Group Configuration](#security-group-configuration)
     - [Recommended Inbound Rules](#recommended-inbound-rules)
     - [Recommended Outbound Rules](#recommended-outbound-rules)
     - [Security Note](#security-note)
+    - [Screenshot Space: Security Group](#screenshot-space-security-group)
 18. [CloudWatch Monitoring](#cloudwatch-monitoring)
     - [CloudWatch Monitoring Scope](#cloudwatch-monitoring-scope)
     - [Example CloudWatch Alarms](#example-cloudwatch-alarms)
+    - [Screenshots: CloudWatch](#screenshots-cloudwatch)
 19. [SNS Notification Service](#sns-notification-service)
     - [SNS Purpose](#sns-purpose)
     - [SNS Setup Steps](#sns-setup-steps)
+    - [Screenshot Space: SNS Topic](#screenshot-space-sns-topic)
 20. [Request Flow and Operations](#request-flow-and-operations)
 21. [Screenshots Evidence Section](#screenshots-evidence-section)
     - [Screenshot Checklist](#screenshot-checklist)
@@ -98,6 +106,7 @@ The backend test server runs on one Amazon EC2 instance using Amazon Linux 2023 
 26. [Conclusion](#conclusion)
 27. [Related AWS Documentation](#related-aws-documentation)
 28. [Project Status](#project-status)
+29. [License](#license)
 
 ---
 
@@ -130,7 +139,7 @@ Monitoring and alerting are handled using:
 - Amazon CloudWatch
 - Amazon SNS
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -178,7 +187,7 @@ EC2 Instance in Public Subnet
     | Node.js Service: Port 4000
 ```
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -202,7 +211,7 @@ Markdown image format:
 
 ![Soulinspire AWS Architecture](docs/screenshots/soulinspire-aws-architecture.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -284,7 +293,7 @@ The issue was resolved by setting the CloudFront default root object to:
 index.html
 ```
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -300,7 +309,7 @@ index.html
 | Node.js | Runs backend test service on port 4000 |
 | Amazon Linux 2023 | Operating system for the EC2 backend server |
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -322,7 +331,7 @@ index.html
 | CloudWatch | Monitors resources and metrics |
 | SNS | Sends alert notifications |
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -381,7 +390,7 @@ assets/
 
 Keep the README file in GitHub for documentation.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -400,7 +409,7 @@ Before deployment, ensure the following are available:
 - Security Group rules
 - CloudWatch and SNS access
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -431,7 +440,7 @@ The VPC provides the networking foundation for the application.
 8. Launch the EC2 backend server in the public subnet.
 9. Attach the required Security Group to the EC2 instance.
 
-### VPC Screenshots
+### Screenshots: VPC and Networking
 
 **Screenshot Space: VPC**
 
@@ -449,7 +458,7 @@ The VPC provides the networking foundation for the application.
 
 ![Route Table](docs/screenshots/route-table.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -469,11 +478,11 @@ IAM helps secure the AWS environment by managing users, roles, permissions, and 
 - Use IAM roles where possible.
 - Protect access with strong authentication.
 
-**Screenshot Space: IAM**
+### Screenshot Space: IAM
 
 ![IAM Configuration](docs/screenshots/iam-configuration.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -514,11 +523,11 @@ One EC2 instance was created as the backend test server.
 14. Test Apache on port 80.
 15. Test Node.js on port 4000.
 
-**Screenshot Space: EC2 Instance**
+### Screenshot Space: EC2 Instance
 
 ![EC2 Backend Server](docs/screenshots/ec2-instance.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -581,11 +590,11 @@ PLATFORM_ID="platform:al2023"
 PRETTY_NAME="Amazon Linux 2023"
 ```
 
-**Screenshot Space: Amazon Linux Login**
+### Screenshot Space: Amazon Linux Login
 
 ![Amazon Linux Terminal Login](docs/screenshots/amazon-linux-login.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -661,11 +670,11 @@ Expected result:
 Soulinspire Backend Server is running on Apache HTTP port 80
 ```
 
-**Screenshot Space: Apache Running**
+### Screenshot Space: Apache Running
 
 ![Apache Running](docs/screenshots/apache-running.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -785,11 +794,11 @@ Expected output:
 ec2-user   12345  0.0  1.5  node server.js
 ```
 
-**Screenshot Space: Node.js Running**
+### Screenshot Space: Node.js Running
 
 ![Node.js Backend Running](docs/screenshots/nodejs-running.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -833,6 +842,8 @@ assets/
 9. Configure Origin Access Control.
 10. Apply the CloudFront-generated bucket policy.
 
+### Screenshots: S3
+
 **Screenshot Space: S3 Bucket**
 
 ![S3 Bucket](docs/screenshots/s3-bucket.png)
@@ -841,7 +852,7 @@ assets/
 
 ![S3 Uploaded Files](docs/screenshots/s3-uploaded-files.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -890,6 +901,8 @@ Expected result:
 
 The Soulinspire Retail Application frontend loads successfully.
 
+### Screenshots: CloudFront
+
 **Screenshot Space: CloudFront Distribution**
 
 ![CloudFront Distribution](docs/screenshots/cloudfront-distribution.png)
@@ -898,7 +911,7 @@ The Soulinspire Retail Application frontend loads successfully.
 
 ![Origin Access Control](docs/screenshots/origin-access-control.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -922,15 +935,15 @@ The Security Group controls inbound and outbound traffic to the EC2 backend serv
 
 ### Security Note
 
-Do not leave SSH port 22 open to the whole internet in a production environment. Restrict SSH access to a trusted IP address.
+> Do not leave SSH port 22 open to the whole internet in a production environment. Restrict SSH access to a trusted IP address.
+>
+> Do not expose port 4000 publicly in production unless there is a specific security-controlled reason.
 
-Do not expose port 4000 publicly in production unless there is a specific security-controlled reason.
-
-**Screenshot Space: Security Group**
+### Screenshot Space: Security Group
 
 ![Security Group Rules](docs/screenshots/security-group-rules.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -960,6 +973,8 @@ CloudWatch can monitor:
 | CloudFront 4xx Error Rate | Detect frontend access issues |
 | CloudFront 5xx Error Rate | Detect origin or delivery issues |
 
+### Screenshots: CloudWatch
+
 **Screenshot Space: CloudWatch Dashboard**
 
 ![CloudWatch Dashboard](docs/screenshots/cloudwatch-dashboard.png)
@@ -968,7 +983,7 @@ CloudWatch can monitor:
 
 ![CloudWatch Alarm](docs/screenshots/cloudwatch-alarm.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -996,11 +1011,11 @@ Examples:
 5. Connect the SNS topic to a CloudWatch alarm.
 6. Test the alarm notification.
 
-**Screenshot Space: SNS Topic**
+### Screenshot Space: SNS Topic
 
 ![SNS Topic](docs/screenshots/sns-topic.png)
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1022,7 +1037,7 @@ The request flow explains how users access the application.
 12. CloudWatch monitors infrastructure metrics.
 13. CloudWatch alarms send notifications through SNS.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1034,28 +1049,28 @@ Use this section to organize proof of implementation.
 
 | Area | Screenshot File |
 |---|---|
-| AWS architecture diagram | docs/screenshots/soulinspire-aws-architecture.png |
-| VPC configuration | docs/screenshots/vpc-configuration.png |
-| Public and private subnets | docs/screenshots/subnets.png |
-| Internet Gateway | docs/screenshots/internet-gateway.png |
-| Route table | docs/screenshots/route-table.png |
-| Security Group rules | docs/screenshots/security-group-rules.png |
-| IAM configuration | docs/screenshots/iam-configuration.png |
-| EC2 instance | docs/screenshots/ec2-instance.png |
-| Amazon Linux login | docs/screenshots/amazon-linux-login.png |
-| Apache running | docs/screenshots/apache-running.png |
-| Node.js running | docs/screenshots/nodejs-running.png |
-| S3 bucket | docs/screenshots/s3-bucket.png |
-| S3 uploaded files | docs/screenshots/s3-uploaded-files.png |
-| CloudFront distribution | docs/screenshots/cloudfront-distribution.png |
-| Origin Access Control | docs/screenshots/origin-access-control.png |
-| CloudWatch dashboard | docs/screenshots/cloudwatch-dashboard.png |
-| CloudWatch alarm | docs/screenshots/cloudwatch-alarm.png |
-| SNS topic | docs/screenshots/sns-topic.png |
-| CloudFront error before fix | docs/screenshots/cloudfront-error-before-fix.png |
-| CloudFront success after fix | docs/screenshots/cloudfront-success-after-fix.png |
+| AWS architecture diagram | `docs/screenshots/soulinspire-aws-architecture.png` |
+| VPC configuration | `docs/screenshots/vpc-configuration.png` |
+| Public and private subnets | `docs/screenshots/subnets.png` |
+| Internet Gateway | `docs/screenshots/internet-gateway.png` |
+| Route table | `docs/screenshots/route-table.png` |
+| Security Group rules | `docs/screenshots/security-group-rules.png` |
+| IAM configuration | `docs/screenshots/iam-configuration.png` |
+| EC2 instance | `docs/screenshots/ec2-instance.png` |
+| Amazon Linux login | `docs/screenshots/amazon-linux-login.png` |
+| Apache running | `docs/screenshots/apache-running.png` |
+| Node.js running | `docs/screenshots/nodejs-running.png` |
+| S3 bucket | `docs/screenshots/s3-bucket.png` |
+| S3 uploaded files | `docs/screenshots/s3-uploaded-files.png` |
+| CloudFront distribution | `docs/screenshots/cloudfront-distribution.png` |
+| Origin Access Control | `docs/screenshots/origin-access-control.png` |
+| CloudWatch dashboard | `docs/screenshots/cloudwatch-dashboard.png` |
+| CloudWatch alarm | `docs/screenshots/cloudwatch-alarm.png` |
+| SNS topic | `docs/screenshots/sns-topic.png` |
+| CloudFront error before fix | `docs/screenshots/cloudfront-error-before-fix.png` |
+| CloudFront success after fix | `docs/screenshots/cloudfront-success-after-fix.png` |
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1117,7 +1132,7 @@ Access Denied
 
 This confirms that the S3 bucket is private and protected.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1177,8 +1192,8 @@ The issue was resolved by entering index.html in the CloudFront default root obj
 | CloudFront shows an error | Default root object missing | Set default root object to index.html |
 | S3 returns Access Denied | Bucket is private | Access the website through CloudFront |
 | CSS or JS not loading | Incorrect folder path | Confirm css, js, and assets folders were uploaded correctly |
-| Apache page not loading | Apache is not running | Run sudo systemctl start httpd |
-| Node.js backend not responding | Node service is not running | Run node server.js or start it in the background |
+| Apache page not loading | Apache is not running | Run `sudo systemctl start httpd` |
+| Node.js backend not responding | Node service is not running | Run `node server.js` or start it in the background |
 | Port 4000 not reachable | Security Group does not allow port 4000 | Add a controlled inbound rule for TCP 4000 |
 | SSH connection fails | Wrong key, wrong username, wrong IP, or blocked port 22 | Use ec2-user, confirm key pair, confirm public IP, and check Security Group |
 | CloudFront still shows old error | Cached response | Create a CloudFront invalidation |
@@ -1201,7 +1216,7 @@ Expected response:
 }
 ```
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1252,7 +1267,7 @@ Expected response:
 - Use Amazon RDS if database functionality is required.
 - Use CI/CD tools such as GitHub Actions, AWS CodePipeline, or AWS CodeDeploy.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1274,7 +1289,7 @@ Future versions of the Soulinspire Retail Application can include:
 - Centralized logging
 - AWS WAF for additional web protection
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1292,22 +1307,11 @@ A key troubleshooting lesson from this project was the importance of setting the
 
 This project provides a strong foundation for hosting, securing, monitoring, and improving a retail web application on AWS.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
-## Related AWS Documentation
-
-- [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/)
-- [Amazon CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
-- [CloudFront Origin Access Control](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
-- [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/)
-- [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/)
-- [Amazon CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/)
-- [Amazon SNS Documentation](https://docs.aws.amazon.com/sns/)
-- [Amazon Linux 2023 Documentation](https://docs.aws.amazon.com/linux/al2023/)
-
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1329,4 +1333,36 @@ The Soulinspire Retail Application AWS infrastructure includes the following com
 - SNS used for notifications.
 - CloudFront frontend loading issue resolved by setting index.html as the default root object.
 
-[⬆ Back to top](#top)
+[Back to top](#table-of-contents)
+
+---
+
+## License
+
+This project is licensed under the DreamPulze Technology License.
+
+```text
+MIT License
+
+Copyright (c) 2026 Emeka Hyginus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+[Back to top](#table-of-contents)
