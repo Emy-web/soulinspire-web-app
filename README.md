@@ -443,7 +443,7 @@ The VPC provides the networking foundation for the application.
 
 **Screenshot Space: VPC**
 
-![VPC Configuration](docs/screenshots/vpc-configuration.png)
+<img width="1594" height="874" alt="image" src="https://github.com/user-attachments/assets/4e1d9afa-d266-48aa-8ab3-96827f269e9c" />
 
 **Screenshot Space: Public and Private Subnets**
 
@@ -795,7 +795,7 @@ ec2-user   12345  0.0  1.5  node server.js
 
 ### Screenshot Space: Node.js Running
 
-![Node.js Backend Running](docs/screenshots/nodejs-running.png)
+<img width="1754" height="882" alt="image" src="https://github.com/user-attachments/assets/4cd8d685-08e3-492a-a6f2-e8d05f76226e" />
 
 [Back to top](#table-of-contents)
 
