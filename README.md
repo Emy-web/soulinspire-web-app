@@ -524,7 +524,7 @@ One EC2 instance was created as the backend test server.
 
 ### Screenshot Space: EC2 Instance
 
-![EC2 Backend Server](docs/screenshots/ec2-instance.png)
+<img width="1903" height="733" alt="image" src="https://github.com/user-attachments/assets/b1d52403-3620-41df-b86b-fff11ba7834c" />
 
 [Back to top](#table-of-contents)
 
@@ -591,7 +591,7 @@ PRETTY_NAME="Amazon Linux 2023"
 
 ### Screenshot Space: Amazon Linux Login
 
-![Amazon Linux Terminal Login](docs/screenshots/amazon-linux-login.png)
+<img width="1878" height="798" alt="image" src="https://github.com/user-attachments/assets/a7462711-7c60-4e89-a1ec-43590be45885" />
 
 [Back to top](#table-of-contents)
 
@@ -671,7 +671,7 @@ Soulinspire Backend Server is running on Apache HTTP port 80
 
 ### Screenshot Space: Apache Running
 
-![Apache Running](docs/screenshots/apache-running.png)
+<img width="1675" height="637" alt="image" src="https://github.com/user-attachments/assets/eada4b22-be4c-4841-aa22-ad2b2c80dcc8" />
 
 [Back to top](#table-of-contents)
 
@@ -845,11 +845,11 @@ assets/
 
 **Screenshot Space: S3 Bucket**
 
-![S3 Bucket](docs/screenshots/s3-bucket.png)
+<img width="1882" height="721" alt="image" src="https://github.com/user-attachments/assets/8a93b727-5c03-4015-83d9-af4f30b5d904" />
 
 **Screenshot Space: S3 Uploaded Files**
 
-![S3 Uploaded Files](docs/screenshots/s3-uploaded-files.png)
+<img width="1882" height="721" alt="image" src="https://github.com/user-attachments/assets/dfefe317-ee65-439c-8350-294b47d8e1ca" />
 
 [Back to top](#table-of-contents)
 
