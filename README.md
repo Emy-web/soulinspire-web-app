@@ -455,7 +455,7 @@ The VPC provides the networking foundation for the application.
 
 **Screenshot Space: Route Table**
 
-![Route Table](docs/screenshots/route-table.png)
+<img width="1830" height="799" alt="image" src="https://github.com/user-attachments/assets/20a7b0fe-92dc-40b5-8091-6cd9e8d4c4dc" />
 
 [Back to top](#table-of-contents)
 
