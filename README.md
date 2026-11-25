@@ -446,12 +446,11 @@ The VPC provides the networking foundation for the application.
 <img width="1594" height="874" alt="image" src="https://github.com/user-attachments/assets/4e1d9afa-d266-48aa-8ab3-96827f269e9c" />
 
 **Screenshot Space: Public and Private Subnets**
-
-![Public and Private Subnets](docs/screenshots/subnets.png)
+<img width="1882" height="828" alt="image" src="https://github.com/user-attachments/assets/3e39e510-f8dd-44cc-8056-4dbdb45a6e26" />
 
 **Screenshot Space: Internet Gateway**
 
-![Internet Gateway](docs/screenshots/internet-gateway.png)
+<img width="1894" height="856" alt="image" src="https://github.com/user-attachments/assets/a89b67bb-a827-403b-988e-4bda2814d0b7" />
 
 **Screenshot Space: Route Table**
 
