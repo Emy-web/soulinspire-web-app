@@ -198,7 +198,7 @@ Paste the Soulinspire Retail Application AWS architectural design in this sectio
 Recommended image location:
 
 ```text
-docs/screenshots/soulinspire-aws-architecture.png
+<img width="940" height="658" alt="Edit-the-previous-Soulinspire-Retail-App" src="https://github.com/user-attachments/assets/c3fa0062-b13b-48bd-9bda-e56a500529b7" />
 ```
 
 Markdown image format:
