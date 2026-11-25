@@ -845,7 +845,7 @@ assets/
 
 **Screenshot Space: S3 Bucket**
 
-<img width="1882" height="721" alt="image" src="https://github.com/user-attachments/assets/8a93b727-5c03-4015-83d9-af4f30b5d904" />
+<img width="1854" height="870" alt="image" src="https://github.com/user-attachments/assets/539438f4-2c1e-4bf9-9f3b-b9cbac1c6e64" />
 
 **Screenshot Space: S3 Uploaded Files**
 
@@ -904,11 +904,11 @@ The Soulinspire Retail Application frontend loads successfully.
 
 **Screenshot Space: CloudFront Distribution**
 
-![CloudFront Distribution](docs/screenshots/cloudfront-distribution.png)
+<img width="1860" height="846" alt="image" src="https://github.com/user-attachments/assets/9e4e0fae-eeea-43a9-96d4-99d1f9ca6ab0" />
 
 **Screenshot Space: Origin Access Control**
 
-![Origin Access Control](docs/screenshots/origin-access-control.png)
+<img width="1850" height="871" alt="image" src="https://github.com/user-attachments/assets/6a8bbc23-fde0-4bdb-a1e0-5db789b54a98" />
 
 [Back to top](#table-of-contents)
 
@@ -940,7 +940,11 @@ The Security Group controls inbound and outbound traffic to the EC2 backend serv
 
 ### Screenshot Space: Security Group
 
-![Security Group Rules](docs/screenshots/security-group-rules.png)
+### FOR INBOUND RULES
+<img width="1262" height="696" alt="image" src="https://github.com/user-attachments/assets/6ae6467f-7413-4786-b65c-c23626026e4e" />
+
+### FOR OUTBOUND RULES
+<img width="1882" height="792" alt="image" src="https://github.com/user-attachments/assets/4eb2de13-5794-4db5-be50-baefd45113a5" />
 
 [Back to top](#table-of-contents)
 
@@ -1178,11 +1182,14 @@ The issue was resolved by entering index.html in the CloudFront default root obj
 
 **Screenshot Space: CloudFront Error Before Fix**
 
-![CloudFront Error Before Fix](docs/screenshots/cloudfront-error-before-fix.png)
+<img width="1229" height="435" alt="image" src="https://github.com/user-attachments/assets/9a195f25-51a0-4867-9154-3d9df5b60059" />
+
+## Entering index.html in the CloudFront default root object configuration.
+
+<img width="1471" height="754" alt="image" src="https://github.com/user-attachments/assets/050789f7-d0bc-41d5-b60d-fcaf8006b8f8" />
 
 **Screenshot Space: CloudFront Success After Fix**
-
-![CloudFront Success After Fix](docs/screenshots/cloudfront-success-after-fix.png)
+<img width="1776" height="937" alt="image" src="https://github.com/user-attachments/assets/b60be503-dc49-4896-82f1-f66210db4c0f" />
 
 ### Common Issues and Fixes
 
